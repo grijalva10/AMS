@@ -1,0 +1,74 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"M2Lrbf5q61\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">AMS</span>\",\"col\":12}},{\"id\":\"qDA_Bv6Ym-\",\"type\":\"card\",\"data\":{\"card_name\":\"Core\",\"col\":4}},{\"id\":\"rPZbXR8xCB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Policies\",\"col\":3}}]",
+ "creation": "2023-10-17 10:44:44.248229",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "organization",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "AMS",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Core",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Company",
+   "link_count": 0,
+   "link_to": "Company",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee",
+   "link_count": 0,
+   "link_to": "Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Person",
+   "link_count": 0,
+   "link_to": "Sales Person",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-10-17 11:43:21.127169",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "AMS",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Policies",
+   "link_to": "Policy",
+   "type": "DocType"
+  }
+ ],
+ "title": "AMS"
+}
