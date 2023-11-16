@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-23 10:03:49.944945",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "activity_at",
+  "contact_id",
+  "created_by",
+  "created_by_name",
+  "date_created",
+  "date_updated",
+  "activity_id",
+  "import_id",
+  "lead_id",
+  "organization_id",
+  "source",
+  "updated_by",
+  "updated_by_name",
+  "user_id",
+  "user_name",
+  "users",
+  "debug"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "activity_at",
+   "fieldtype": "Datetime",
+   "label": "activity_at"
+  },
+  {
+   "fieldname": "contact_id",
+   "fieldtype": "Data",
+   "label": "contact_id"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "label": "created_by"
+  },
+  {
+   "fieldname": "created_by_name",
+   "fieldtype": "Data",
+   "label": "created_by_name"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Data",
+   "label": "date_created"
+  },
+  {
+   "fieldname": "date_updated",
+   "fieldtype": "Data",
+   "label": "date_updated"
+  },
+  {
+   "fieldname": "activity_id",
+   "fieldtype": "Data",
+   "label": "activity ID"
+  },
+  {
+   "fieldname": "import_id",
+   "fieldtype": "Data",
+   "label": "import_id"
+  },
+  {
+   "fieldname": "lead_id",
+   "fieldtype": "Data",
+   "label": "lead_id"
+  },
+  {
+   "fieldname": "organization_id",
+   "fieldtype": "Data",
+   "label": "organization_id"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "source"
+  },
+  {
+   "fieldname": "updated_by",
+   "fieldtype": "Data",
+   "label": "updated_by"
+  },
+  {
+   "fieldname": "updated_by_name",
+   "fieldtype": "Data",
+   "label": "updated_by_name"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "user_id"
+  },
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "user_name"
+  },
+  {
+   "fieldname": "users",
+   "fieldtype": "Data",
+   "label": "users"
+  },
+  {
+   "fieldname": "debug",
+   "fieldtype": "JSON",
+   "label": "debug"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-23 10:14:49.416775",
+ "modified_by": "Administrator",
+ "module": "Close CRM",
+ "name": "Close Activity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

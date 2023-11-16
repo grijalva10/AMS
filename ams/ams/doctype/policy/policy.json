@@ -10,9 +10,12 @@
   "policy_number",
   "effective_date",
   "expiration_date",
-  "customer",
+  "client",
   "carrier",
-  "agent"
+  "broker",
+  "total_premium",
+  "broker_fee",
+  "commission"
  ],
  "fields": [
   {
@@ -37,30 +40,45 @@
    "reqd": 1
   },
   {
-   "fieldname": "customer",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
-  },
-  {
    "fieldname": "carrier",
    "fieldtype": "Link",
    "label": "Carrier",
    "options": "Carrier"
   },
   {
-   "fieldname": "agent",
+   "fieldname": "client",
    "fieldtype": "Link",
-   "label": "Agent",
-   "options": "Agent",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "broker",
+   "fieldtype": "Link",
+   "label": "Broker",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_premium",
+   "fieldtype": "Currency",
+   "label": "Total Premium"
+  },
+  {
+   "fieldname": "broker_fee",
+   "fieldtype": "Currency",
+   "label": "Broker Fee"
+  },
+  {
+   "fieldname": "commission",
+   "fieldtype": "Currency",
+   "label": "Commission"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-17 11:46:20.972792",
+ "modified": "2023-11-06 14:48:23.207363",
  "modified_by": "Administrator",
  "module": "AMS",
  "name": "Policy",

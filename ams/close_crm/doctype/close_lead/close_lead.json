@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-23 10:54:48.645019",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lead_id",
+  "contact_id",
+  "lead_name",
+  "annual_payroll",
+  "annual_revenue",
+  "coverage_type",
+  "sic_code",
+  "employees",
+  "state",
+  "zipcode",
+  "has_isc_quote",
+  "owner_experience",
+  "business_experience",
+  "contact_name",
+  "contact_phone",
+  "contact_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "lead_id",
+   "fieldtype": "Data",
+   "label": "lead_id"
+  },
+  {
+   "fieldname": "contact_id",
+   "fieldtype": "Data",
+   "label": "contact_id"
+  },
+  {
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "lead_name"
+  },
+  {
+   "fieldname": "annual_payroll",
+   "fieldtype": "Data",
+   "label": "annual_payroll"
+  },
+  {
+   "fieldname": "annual_revenue",
+   "fieldtype": "Data",
+   "label": "annual_revenue"
+  },
+  {
+   "fieldname": "coverage_type",
+   "fieldtype": "Data",
+   "label": "coverage_type"
+  },
+  {
+   "fieldname": "sic_code",
+   "fieldtype": "Data",
+   "label": "sic_code"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Data",
+   "label": "employees"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "state"
+  },
+  {
+   "fieldname": "zipcode",
+   "fieldtype": "Data",
+   "label": "zipcode"
+  },
+  {
+   "fieldname": "has_isc_quote",
+   "fieldtype": "Data",
+   "label": "has_isc_quote"
+  },
+  {
+   "fieldname": "owner_experience",
+   "fieldtype": "Data",
+   "label": "owner_experience"
+  },
+  {
+   "fieldname": "business_experience",
+   "fieldtype": "Data",
+   "label": "business_experience"
+  },
+  {
+   "fieldname": "contact_name",
+   "fieldtype": "Data",
+   "label": "contact_name"
+  },
+  {
+   "fieldname": "contact_phone",
+   "fieldtype": "Data",
+   "label": "contact_phone"
+  },
+  {
+   "fieldname": "contact_email",
+   "fieldtype": "Data",
+   "label": "contact_email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-23 11:06:26.403980",
+ "modified_by": "Administrator",
+ "module": "Close CRM",
+ "name": "Close Lead",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "lead_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "lead_name",
+ "translated_doctype": 1
+}

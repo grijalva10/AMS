@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"M2Lrbf5q61\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">AMS</span>\",\"col\":12}},{\"id\":\"qDA_Bv6Ym-\",\"type\":\"card\",\"data\":{\"card_name\":\"Core\",\"col\":4}},{\"id\":\"rPZbXR8xCB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Policies\",\"col\":3}}]",
+ "content": "[{\"id\":\"M2Lrbf5q61\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">AMS</span>\",\"col\":12}},{\"id\":\"qDA_Bv6Ym-\",\"type\":\"card\",\"data\":{\"card_name\":\"Core\",\"col\":4}},{\"id\":\"lsWf6gaJTk\",\"type\":\"card\",\"data\":{\"card_name\":\"AMS\",\"col\":4}},{\"id\":\"vrvbAwWa_N\",\"type\":\"card\",\"data\":{\"card_name\":\"Lead & Client Management\",\"col\":4}},{\"id\":\"pCKTZ1qWV9\",\"type\":\"card\",\"data\":{\"card_name\":\"close\",\"col\":4}},{\"id\":\"rPZbXR8xCB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Policies\",\"col\":3}},{\"id\":\"1dA3TNSQSA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Doctypes\",\"col\":3}}]",
  "creation": "2023-10-17 10:44:44.248229",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -14,8 +14,26 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "close",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Close Activity",
+   "link_count": 0,
+   "link_to": "Close Activity",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Core",
-   "link_count": 3,
+   "link_count": 5,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -48,10 +66,156 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "User",
+   "link_count": 0,
+   "link_to": "User",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Role",
+   "link_count": 0,
+   "link_to": "Role",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lead & Client Management",
+   "link_count": 6,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lead",
+   "link_count": 0,
+   "link_to": "Lead",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Client",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Quotation",
+   "link_count": 0,
+   "link_to": "Quotation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Contact",
+   "link_count": 0,
+   "link_to": "Contact",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "AMS",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance Provider",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Quotation ",
+   "link_count": 0,
+   "link_to": "Quotation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Policy",
+   "link_count": 0,
+   "link_to": "Policy",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Claim",
+   "link_count": 0,
+   "link_to": "Warranty Claim",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Client",
+   "link_count": 0,
+   "link_to": "Client",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-10-17 11:43:21.127169",
- "modified_by": "Administrator",
+ "modified": "2023-11-13 13:36:26.411828",
+ "modified_by": "jeff@jmgia.com",
  "module": "AMS",
  "name": "AMS",
  "number_cards": [],
@@ -67,6 +231,13 @@
    "doc_view": "List",
    "label": "Policies",
    "link_to": "Policy",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Doctypes",
+   "link_to": "DocType",
    "type": "DocType"
   }
  ],
