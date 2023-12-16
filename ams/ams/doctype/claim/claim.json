@@ -1,38 +1,29 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:company",
- "creation": "2023-10-17 10:16:53.091238",
+ "creation": "2023-12-06 11:33:17.854764",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "company"
+  "claim_name"
  ],
  "fields": [
   {
-   "fieldname": "company",
-   "fieldtype": "Link",
+   "fieldname": "claim_name",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Company",
-   "options": "Company",
-   "reqd": 1,
-   "unique": 1
+   "label": "Claim Name",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [
-  {
-   "link_doctype": "Agent",
-   "link_fieldname": "agency"
-  }
- ],
- "modified": "2023-10-17 10:39:27.277539",
+ "links": [],
+ "modified": "2023-12-06 11:33:17.854764",
  "modified_by": "Administrator",
  "module": "AMS",
- "name": "Agency",
- "naming_rule": "By fieldname",
+ "name": "Claim",
  "owner": "Administrator",
  "permissions": [
   {

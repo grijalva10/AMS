@@ -1,30 +1,315 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:company_name",
- "creation": "2023-10-17 11:46:53.548508",
+ "creation": "2023-12-04 11:31:13.412425",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "company_name"
+  "general_tab",
+  "general_column",
+  "insured_type",
+  "type",
+  "commercial_name",
+  "dba",
+  "greeting_name",
+  "fein",
+  "acquisition_date",
+  "active",
+  "year_business_started",
+  "type_of_business",
+  "customer_id",
+  "address_column",
+  "address_line_1",
+  "address_line_2",
+  "state",
+  "city",
+  "zip_code",
+  "description",
+  "section_break_ffnl",
+  "first_name",
+  "last_name",
+  "date_of_birth",
+  "referral_source_company_name",
+  "column_break_rbcs",
+  "middle_name",
+  "social_security_number",
+  "section_break_akna",
+  "agents",
+  "agency_location",
+  "column_break_wejp",
+  "csrs",
+  "section_break_ntcv",
+  "email",
+  "email_2",
+  "email_3",
+  "fax",
+  "phone",
+  "cell_phone",
+  "sms_phone",
+  "website",
+  "column_break_qepc",
+  "co_insured_date_of_birth",
+  "co_insured_first_name",
+  "co_insured_middle_name",
+  "co_insured_last_name"
  ],
  "fields": [
   {
-   "fieldname": "company_name",
+   "fieldname": "general_tab",
+   "fieldtype": "Tab Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "general_column",
+   "fieldtype": "Column Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "insured_type",
+   "fieldtype": "Select",
+   "label": "Insured Type",
+   "options": "Commercial\nPersonal"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Record Type",
+   "options": "Insured\nProspect\nUnderwriter\nNAIC\nFinance Company\nReferral Source\nOther"
+  },
+  {
+   "fieldname": "commercial_name",
    "fieldtype": "Data",
-   "label": "Company Name",
-   "unique": 1
+   "label": "Name"
+  },
+  {
+   "fieldname": "dba",
+   "fieldtype": "Data",
+   "label": "DBA"
+  },
+  {
+   "fieldname": "greeting_name",
+   "fieldtype": "Data",
+   "label": "Greeting Name"
+  },
+  {
+   "fieldname": "fein",
+   "fieldtype": "Data",
+   "label": "FEIN"
+  },
+  {
+   "fieldname": "acquisition_date",
+   "fieldtype": "Data",
+   "label": "Acquisition Date"
+  },
+  {
+   "default": "1",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "year_business_started",
+   "fieldtype": "Data",
+   "label": "Year Business Started"
+  },
+  {
+   "fieldname": "type_of_business",
+   "fieldtype": "Select",
+   "label": "Type of Business",
+   "options": "Corporation\nIndividual\nJoint Venture\nLLC\nNonprofit\nPartnership\nS Corp\nTrust\nOther"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Data",
+   "label": "Customer ID"
+  },
+  {
+   "fieldname": "address_column",
+   "fieldtype": "Column Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "zip_code",
+   "fieldtype": "Data",
+   "label": "Zip Code"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_ffnl",
+   "fieldtype": "Section Break",
+   "label": "PRINCIPALS / CO-INSUREDS"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "referral_source_company_name",
+   "fieldtype": "Data",
+   "label": "Referral Source Company Name"
+  },
+  {
+   "fieldname": "column_break_rbcs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "description": "Social Security Number",
+   "fieldname": "social_security_number",
+   "fieldtype": "Data",
+   "label": "SSN"
+  },
+  {
+   "fieldname": "section_break_akna",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "agents",
+   "fieldtype": "Data",
+   "label": "Agents"
+  },
+  {
+   "fieldname": "agency_location",
+   "fieldtype": "Data",
+   "label": "Agency Location"
+  },
+  {
+   "fieldname": "column_break_wejp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "csrs",
+   "fieldtype": "Data",
+   "label": "CSRs"
+  },
+  {
+   "fieldname": "section_break_ntcv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "email_2",
+   "fieldtype": "Data",
+   "label": "Email 2",
+   "options": "Email"
+  },
+  {
+   "fieldname": "email_3",
+   "fieldtype": "Data",
+   "label": "Email 3",
+   "options": "Email"
+  },
+  {
+   "fieldname": "fax",
+   "fieldtype": "Data",
+   "label": "Fax",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "cell_phone",
+   "fieldtype": "Data",
+   "label": "Cell Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "sms_phone",
+   "fieldtype": "Data",
+   "label": "SMS Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "column_break_qepc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "co_insured_date_of_birth",
+   "fieldtype": "Data",
+   "label": "CO Insured Date of Birth"
+  },
+  {
+   "fieldname": "co_insured_first_name",
+   "fieldtype": "Data",
+   "label": "CO Insured First Name"
+  },
+  {
+   "fieldname": "co_insured_middle_name",
+   "fieldtype": "Data",
+   "label": "CO Insured Middle Name"
+  },
+  {
+   "fieldname": "co_insured_last_name",
+   "fieldtype": "Data",
+   "label": "CO Insured Last Name"
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-10-17 11:47:01.950889",
+ "links": [
+  {
+   "link_doctype": "Policy",
+   "link_fieldname": "Insured"
+  }
+ ],
+ "modified": "2023-12-04 11:31:13.412425",
  "modified_by": "Administrator",
  "module": "AMS",
  "name": "Financing Company",
- "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

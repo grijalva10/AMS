@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"M2Lrbf5q61\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">AMS</span>\",\"col\":12}},{\"id\":\"qDA_Bv6Ym-\",\"type\":\"card\",\"data\":{\"card_name\":\"Core\",\"col\":4}},{\"id\":\"lsWf6gaJTk\",\"type\":\"card\",\"data\":{\"card_name\":\"AMS\",\"col\":4}},{\"id\":\"vrvbAwWa_N\",\"type\":\"card\",\"data\":{\"card_name\":\"Lead & Client Management\",\"col\":4}},{\"id\":\"pCKTZ1qWV9\",\"type\":\"card\",\"data\":{\"card_name\":\"close\",\"col\":4}},{\"id\":\"rPZbXR8xCB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Policies\",\"col\":3}},{\"id\":\"1dA3TNSQSA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Doctypes\",\"col\":3}}]",
+ "content": "[{\"id\":\"M2Lrbf5q61\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">AMS</span>\",\"col\":12}},{\"id\":\"1dA3TNSQSA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Doctypes\",\"col\":3}},{\"id\":\"ol6vVI14Mw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Agent\",\"col\":3}},{\"id\":\"rPZbXR8xCB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Policies\",\"col\":3}},{\"id\":\"Ncttzi03uu\",\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":4}}]",
  "creation": "2023-10-17 10:44:44.248229",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -14,17 +14,17 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "close",
-   "link_count": 1,
+   "label": "Masters",
+   "link_count": 9,
    "onboard": 0,
    "type": "Card Break"
   },
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Close Activity",
+   "label": "Insurance Agency",
    "link_count": 0,
-   "link_to": "Close Activity",
+   "link_to": "Insurance Agency",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -32,17 +32,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Core",
-   "link_count": 5,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Company",
+   "label": "Agent",
    "link_count": 0,
-   "link_to": "Company",
+   "link_to": "Agent",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -50,135 +42,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Employee",
+   "label": "Insured",
    "link_count": 0,
-   "link_to": "Employee",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Sales Person",
-   "link_count": 0,
-   "link_to": "Sales Person",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "User",
-   "link_count": 0,
-   "link_to": "User",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Role",
-   "link_count": 0,
-   "link_to": "Role",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Lead & Client Management",
-   "link_count": 6,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Lead",
-   "link_count": 0,
-   "link_to": "Lead",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Client",
-   "link_count": 0,
-   "link_to": "Customer",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Quotation",
-   "link_count": 0,
-   "link_to": "Quotation",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Supplier",
-   "link_count": 0,
-   "link_to": "Supplier",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Payment Entry",
-   "link_count": 0,
-   "link_to": "Payment Entry",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Contact",
-   "link_count": 0,
-   "link_to": "Contact",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "AMS",
-   "link_count": 5,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Insurance Provider",
-   "link_count": 0,
-   "link_to": "Supplier",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Quotation ",
-   "link_count": 0,
-   "link_to": "Quotation",
+   "link_to": "Insured",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -196,9 +62,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Claim",
+   "label": "Carrier",
    "link_count": 0,
-   "link_to": "Warranty Claim",
+   "link_to": "Carrier",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -206,16 +72,46 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Client",
+   "label": "MGA",
    "link_count": 0,
-   "link_to": "Client",
+   "link_to": "MGA",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Financing Company",
+   "link_count": 0,
+   "link_to": "Financing Company",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Receipt",
+   "link_count": 0,
+   "link_to": "Payment Receipt",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment",
+   "link_count": 0,
+   "link_to": "Payment",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2023-11-13 13:36:26.411828",
- "modified_by": "jeff@jmgia.com",
+ "modified": "2023-12-15 14:31:28.884928",
+ "modified_by": "Administrator",
  "module": "AMS",
  "name": "AMS",
  "number_cards": [],
@@ -226,6 +122,15 @@
  "roles": [],
  "sequence_id": 1.0,
  "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Enabled",
+   "label": "Agent",
+   "link_to": "Agent",
+   "stats_filter": "{\"enabled\":[\"=\",1]}",
+   "type": "DocType"
+  },
   {
    "color": "Grey",
    "doc_view": "List",

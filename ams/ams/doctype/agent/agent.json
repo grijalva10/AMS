@@ -8,51 +8,102 @@
  "engine": "InnoDB",
  "field_order": [
   "agency",
-  "employee",
+  "first_name",
+  "last_name",
   "full_name",
-  "status",
-  "type"
+  "email",
+  "phone",
+  "cell_phone",
+  "agent_type",
+  "user",
+  "enabled",
+  "commission_percentage"
  ],
  "fields": [
-  {
-   "fieldname": "employee",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Employee",
-   "options": "Employee",
-   "reqd": 1
-  },
   {
    "fieldname": "agency",
    "fieldtype": "Link",
    "label": "Agency",
-   "options": "Agency",
+   "options": "Insurance Agency",
    "reqd": 1
   },
   {
    "fetch_from": "employee.employee_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.status",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "cell_phone",
+   "fieldtype": "Data",
+   "label": "Cell Phone",
+   "options": "Phone"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "agent_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Agent Type",
+   "options": "Sales Agent\nService Agent"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
    "fieldname": "full_name",
    "fieldtype": "Data",
    "label": "Full Name"
   },
   {
-   "fetch_from": "employee.status",
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Status"
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
   },
   {
-   "fetch_from": "employee.department",
-   "fieldname": "type",
-   "fieldtype": "Data",
+   "default": "65",
+   "fieldname": "commission_percentage",
+   "fieldtype": "Percent",
    "in_list_view": 1,
-   "label": "Type"
+   "label": "Commission Percentage"
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-10-17 11:34:14.506596",
+ "links": [
+  {
+   "link_doctype": "Policy",
+   "link_fieldname": "agent"
+  },
+  {
+   "link_doctype": "Insured",
+   "link_fieldname": "agent"
+  }
+ ],
+ "modified": "2023-12-15 13:44:32.723687",
  "modified_by": "Administrator",
  "module": "AMS",
  "name": "Agent",

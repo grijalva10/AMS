@@ -199,3 +199,83 @@ app_license = "MIT"
 # auth_hooks = [
 #	"ams.auth.validate"
 # ]
+
+website_route_rules = [
+	{"from_route": "/policies", "to_route": "Policy"},
+	{
+		"from_route": "/policies/<path:name>",
+		"to_route": "policies",
+		"defaults": {
+			"doctype": "Policy",
+			"parents": [{"label": "Policies", "route": "policies"}],
+		},
+	},
+]
+
+# standard_portal_menu_items = [
+# 	{"title": "Projects", "route": "/project", "reference_doctype": "Project"},
+# 	{
+# 		"title": "Request for Quotations",
+# 		"route": "/rfq",
+# 		"reference_doctype": "Request for Quotation",
+# 		"role": "Supplier",
+# 	},
+# 	{
+# 		"title": "Supplier Quotation",
+# 		"route": "/supplier-quotations",
+# 		"reference_doctype": "Supplier Quotation",
+# 		"role": "Supplier",
+# 	},
+# 	{
+# 		"title": "Purchase Orders",
+# 		"route": "/purchase-orders",
+# 		"reference_doctype": "Purchase Order",
+# 		"role": "Supplier",
+# 	},
+# 	{
+# 		"title": "Purchase Invoices",
+# 		"route": "/purchase-invoices",
+# 		"reference_doctype": "Purchase Invoice",
+# 		"role": "Supplier",
+# 	},
+# 	{
+# 		"title": "Quotations",
+# 		"route": "/quotations",
+# 		"reference_doctype": "Quotation",
+# 		"role": "Customer",
+# 	},
+# 	{
+# 		"title": "Orders",
+# 		"route": "/orders",
+# 		"reference_doctype": "Sales Order",
+# 		"role": "Customer",
+# 	},
+# 	{
+# 		"title": "Invoices",
+# 		"route": "/invoices",
+# 		"reference_doctype": "Sales Invoice",
+# 		"role": "Customer",
+# 	},
+# 	{
+# 		"title": "Shipments",
+# 		"route": "/shipments",
+# 		"reference_doctype": "Delivery Note",
+# 		"role": "Customer",
+# 	},
+# 	{"title": "Issues", "route": "/issues", "reference_doctype": "Issue", "role": "Customer"},
+# 	{"title": "Addresses", "route": "/addresses", "reference_doctype": "Address"},
+# 	{
+# 		"title": "Timesheets",
+# 		"route": "/timesheets",
+# 		"reference_doctype": "Timesheet",
+# 		"role": "Customer",
+# 	},
+# 	{"title": "Newsletter", "route": "/newsletters", "reference_doctype": "Newsletter"},
+# 	{
+# 		"title": "Material Request",
+# 		"route": "/material-requests",
+# 		"reference_doctype": "Material Request",
+# 		"role": "Customer",
+# 	},
+# 	{"title": "Appointment Booking", "route": "/book_appointment"},
+# ]

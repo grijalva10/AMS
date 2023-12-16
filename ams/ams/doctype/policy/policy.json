@@ -1,21 +1,31 @@
 {
  "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "field:policy_number",
  "creation": "2023-10-17 11:38:14.993193",
  "default_view": "List",
+ "description": "Direct Bill\nDirect Bill with Agency Down Payment\nAgency Bill\nAgency Bill with Outside Financing\nAgency Bill Paid in Full\nDirect Bill Autopay",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "policy_number",
+  "insured",
+  "policy_type",
+  "business_type",
+  "status",
   "effective_date",
   "expiration_date",
-  "client",
-  "carrier",
-  "broker",
-  "total_premium",
   "broker_fee",
-  "commission"
+  "commission",
+  "total_premium",
+  "column_break_wnmj",
+  "carrier",
+  "agent",
+  "mga",
+  "financing_company"
  ],
  "fields": [
   {
@@ -23,7 +33,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Policy Number",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "effective_date",
@@ -43,45 +54,105 @@
    "fieldname": "carrier",
    "fieldtype": "Link",
    "label": "Carrier",
-   "options": "Carrier"
-  },
-  {
-   "fieldname": "client",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Client",
-   "options": "Customer",
-   "reqd": 1
-  },
-  {
-   "fieldname": "broker",
-   "fieldtype": "Link",
-   "label": "Broker",
-   "options": "Employee",
+   "options": "Carrier",
    "reqd": 1
   },
   {
    "fieldname": "total_premium",
    "fieldtype": "Currency",
-   "label": "Total Premium"
+   "label": "Total Premium",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "broker_fee",
    "fieldtype": "Currency",
-   "label": "Broker Fee"
+   "label": "Broker Fee",
+   "reqd": 1
   },
   {
    "fieldname": "commission",
    "fieldtype": "Currency",
-   "label": "Commission"
+   "label": "Commission",
+   "reqd": 1
+  },
+  {
+   "fieldname": "business_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Business Type",
+   "options": "New Business\nRenewal\nEndorsement\nReinstated"
+  },
+  {
+   "fieldname": "insured",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Insured",
+   "options": "Insured",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agent",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Agent",
+   "options": "Agent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mga",
+   "fieldtype": "Link",
+   "label": "MGA",
+   "options": "MGA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "financing_company",
+   "fieldtype": "Link",
+   "label": "Financing Company",
+   "options": "Financing Company"
+  },
+  {
+   "fieldname": "column_break_wnmj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Active\nCancelled\nExpired\nNon-Renewal"
+  },
+  {
+   "fieldname": "policy_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Policy Type",
+   "options": "Policy Type",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-06 14:48:23.207363",
+ "modified": "2023-12-15 13:48:28.133386",
  "modified_by": "Administrator",
  "module": "AMS",
  "name": "Policy",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

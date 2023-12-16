@@ -1,8 +1,6 @@
 from datetime import datetime
 import frappe
 
-# API_KEY = 'api_0Lsic0qhUJGZ8uIIUA1Fxm.3wutkk7gpvisdm33L710OM'
-
 
 @frappe.whitelist()
 def create_close_lead(lead_id=None, contact_id=None, lead_name=None,
@@ -27,6 +25,22 @@ def create_close_lead(lead_id=None, contact_id=None, lead_name=None,
         'contact_name': contact_name,
         'contact_email': contact_email,
         'contact_phone': contact_phone
+    })
+    doc.insert()
+    frappe.db.commit()
+    return doc
+
+@frappe.whitelist()
+def new_payment_receipt(client=None, email=None, transaction_id=None,
+                      date=None, amount=None, charge_fee=None):
+    doc = frappe.get_doc({
+        'doctype': 'Payment Receipt',
+        'client': client,
+        'email': email,
+        'transaction_id': transaction_id,
+        'date': date,
+        'amount': amount,
+        'charge_fee': charge_fee
     })
     doc.insert()
     frappe.db.commit()

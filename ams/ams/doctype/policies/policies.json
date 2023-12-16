@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-04 09:49:12.850916",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "policy",
+  "effective_date",
+  "expiration_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "policy",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Policy",
+   "options": "Policy",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "policy.effective_date",
+   "fieldname": "effective_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Effective Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "policy.expiration_date",
+   "fieldname": "expiration_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Expiration Date",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-06 11:48:53.589319",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "Policies",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
