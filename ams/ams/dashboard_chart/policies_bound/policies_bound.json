@@ -1,0 +1,39 @@
+{
+ "based_on": "effective_date",
+ "chart_name": "Policies Bound",
+ "chart_type": "Count",
+ "creation": "2023-12-18 19:45:38.787214",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Policy",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[]",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "last_synced_on": "2023-12-18 19:52:31.402531",
+ "modified": "2023-12-18 19:52:50.737585",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "Policies Bound",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Service Agent"
+  }
+ ],
+ "source": "",
+ "time_interval": "Yearly",
+ "timeseries": 1,
+ "timespan": "Last Year",
+ "type": "Line",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "y_axis": []
+}

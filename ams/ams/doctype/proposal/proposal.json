@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-18 22:23:45.579441",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "agency",
+  "policy_type",
+  "broker",
+  "carrier",
+  "per_policy",
+  "per_employee",
+  "down_payment",
+  "payment_amount",
+  "annual_cost",
+  "number_of_payments",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "agency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Agency",
+   "options": "Insurance Agency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "policy_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Policy Type",
+   "options": "Policy Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "broker",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Broker",
+   "options": "Agent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "carrier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Carrier",
+   "options": "Carrier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "per_policy",
+   "fieldtype": "Currency",
+   "label": "Per Policy"
+  },
+  {
+   "fieldname": "per_employee",
+   "fieldtype": "Currency",
+   "label": "Per Employee"
+  },
+  {
+   "default": "0",
+   "fieldname": "down_payment",
+   "fieldtype": "Currency",
+   "label": "Down Payment"
+  },
+  {
+   "default": "0",
+   "fieldname": "payment_amount",
+   "fieldtype": "Currency",
+   "label": "Payment Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "annual_cost",
+   "fieldtype": "Currency",
+   "label": "Annual Cost"
+  },
+  {
+   "fieldname": "number_of_payments",
+   "fieldtype": "Int",
+   "label": "Number of Payments"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Proposal",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-18 22:23:45.579441",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "Proposal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

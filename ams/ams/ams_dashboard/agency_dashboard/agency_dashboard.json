@@ -1,0 +1,41 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Receipts",
+   "width": "Half"
+  },
+  {
+   "chart": "Receipts sum",
+   "width": "Half"
+  },
+  {
+   "chart": "Policy Types",
+   "width": "Half"
+  },
+  {
+   "chart": "Clients",
+   "width": "Half"
+  },
+  {
+   "chart": "Broker Fee",
+   "width": "Half"
+  },
+  {
+   "chart": "Broker commission",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-12-18 21:34:45.014186",
+ "dashboard_name": "Agency Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-12-19 00:41:21.304137",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "Agency Dashboard",
+ "owner": "Administrator"
+}

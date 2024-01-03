@@ -1,14 +1,16 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-12-04 09:49:12.850916",
+ "creation": "2023-12-26 19:24:45.499244",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "policy",
-  "effective_date",
-  "expiration_date"
+  "carrier",
+  "mga",
+  "premium",
+  "broker_fee"
  ],
  "fields": [
   {
@@ -20,26 +22,42 @@
    "reqd": 1
   },
   {
-   "fetch_from": "policy.effective_date",
-   "fieldname": "effective_date",
-   "fieldtype": "Data",
+   "fetch_from": "policy.carrier",
+   "fieldname": "carrier",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Effective Date",
+   "label": "Carrier",
+   "options": "Carrier",
    "read_only": 1
   },
   {
-   "fetch_from": "policy.expiration_date",
-   "fieldname": "expiration_date",
-   "fieldtype": "Data",
+   "fetch_from": "policy.mga",
+   "fieldname": "mga",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Expiration Date",
+   "label": "MGA",
+   "options": "MGA",
    "read_only": 1
+  },
+  {
+   "fetch_from": "policy.total_premium",
+   "fieldname": "premium",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Premium"
+  },
+  {
+   "fetch_from": "policy.broker_fee",
+   "fieldname": "broker_fee",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Broker Fee"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-12-06 11:48:53.589319",
+ "modified": "2023-12-26 19:29:57.331214",
  "modified_by": "Administrator",
  "module": "AMS",
  "name": "Policies",

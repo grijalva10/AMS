@@ -1,0 +1,182 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_rename": 1,
+ "creation": "2023-12-21 18:59:25.850423",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_se1k",
+  "policy_type",
+  "date",
+  "valid_until",
+  "column_break_aiga",
+  "insured",
+  "broker",
+  "carrier",
+  "coverage_details_section",
+  "per_policy",
+  "per_employee",
+  "down_payment",
+  "payment_amount",
+  "annual_cost",
+  "number_of_payments",
+  "amended_from",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "policy_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Policy Type",
+   "options": "Policy Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "broker",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Broker",
+   "options": "Agent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "carrier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Carrier",
+   "options": "Carrier"
+  },
+  {
+   "fieldname": "per_policy",
+   "fieldtype": "Currency",
+   "label": "Per Policy"
+  },
+  {
+   "fieldname": "per_employee",
+   "fieldtype": "Currency",
+   "label": "Per Employee"
+  },
+  {
+   "default": "0",
+   "fieldname": "down_payment",
+   "fieldtype": "Currency",
+   "label": "Down Payment"
+  },
+  {
+   "default": "0",
+   "fieldname": "payment_amount",
+   "fieldtype": "Currency",
+   "label": "Payment Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "annual_cost",
+   "fieldtype": "Currency",
+   "label": "Annual Cost"
+  },
+  {
+   "fieldname": "number_of_payments",
+   "fieldtype": "Int",
+   "label": "Number of Payments"
+  },
+  {
+   "fieldname": "insured",
+   "fieldtype": "Link",
+   "label": "Insured",
+   "options": "Insured"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Quote",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "valid_until",
+   "fieldtype": "Date",
+   "label": "Valid Until"
+  },
+  {
+   "fieldname": "section_break_se1k",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "coverage_details_section",
+   "fieldtype": "Section Break",
+   "label": "Coverage Details"
+  },
+  {
+   "fieldname": "column_break_aiga",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nOpen\nExpired"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-21 19:45:37.714768",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "Quote",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Insured",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Gray",
+   "title": "Draft"
+  },
+  {
+   "color": "Blue",
+   "title": "Open"
+  },
+  {
+   "color": "Red",
+   "title": "Expired"
+  }
+ ],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

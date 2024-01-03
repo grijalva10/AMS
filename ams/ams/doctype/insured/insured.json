@@ -3,22 +3,24 @@
  "allow_events_in_timeline": 1,
  "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "field:company_name",
  "creation": "2023-11-30 14:37:19.792895",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "commercial_name",
-  "email",
-  "phone",
+  "company_name",
   "column_break_v6bz",
   "agent",
   "service_agent",
   "enabled",
   "contact_info_section",
+  "primary_contact",
   "first_name",
   "last_name",
+  "email",
+  "phone",
   "address_column",
   "address_line_1",
   "address_line_2",
@@ -28,19 +30,13 @@
   "section_break_eifu",
   "description",
   "section_break_ntcv",
-  "lead_id"
+  "lead_id",
+  "address_html",
+  "contact_html",
+  "tab_2_tab",
+  "policies"
  ],
  "fields": [
-  {
-   "fieldname": "commercial_name",
-   "fieldtype": "Data",
-   "in_global_search": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "Company Name",
-   "reqd": 1
-  },
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
@@ -125,9 +121,10 @@
   {
    "fieldname": "agent",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
    "in_list_view": 1,
    "in_preview": 1,
-   "in_standard_filter": 1,
    "label": "Broker",
    "options": "Agent",
    "reqd": 1
@@ -148,8 +145,45 @@
    "fieldtype": "Check",
    "in_filter": 1,
    "in_preview": 1,
-   "in_standard_filter": 1,
    "label": "Enabled"
+  },
+  {
+   "fieldname": "primary_contact",
+   "fieldtype": "Link",
+   "label": "Primary Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "address_html"
+  },
+  {
+   "fieldname": "contact_html",
+   "fieldtype": "HTML",
+   "label": "contact_html"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Company Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "policies",
+   "fieldtype": "Table",
+   "label": "Policies",
+   "options": "Insured Policy"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Policies"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -159,18 +193,19 @@
    "link_fieldname": "insured"
   },
   {
-   "link_doctype": "Payment",
+   "link_doctype": "Payment Receipt",
    "link_fieldname": "insured"
   },
   {
-   "link_doctype": "Payment Receipt",
+   "link_doctype": "Claim",
    "link_fieldname": "insured"
   }
  ],
- "modified": "2023-12-15 14:09:58.459545",
+ "modified": "2024-01-02 12:10:59.327662",
  "modified_by": "Administrator",
  "module": "AMS",
  "name": "Insured",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -186,11 +221,7 @@
    "write": 1
   }
  ],
- "search_fields": "commercial_name",
- "show_preview_popup": 1,
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "commercial_name"
+ "states": []
 }

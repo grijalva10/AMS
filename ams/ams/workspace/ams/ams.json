@@ -1,6 +1,11 @@
 {
- "charts": [],
- "content": "[{\"id\":\"M2Lrbf5q61\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">AMS</span>\",\"col\":12}},{\"id\":\"1dA3TNSQSA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Doctypes\",\"col\":3}},{\"id\":\"ol6vVI14Mw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Agent\",\"col\":3}},{\"id\":\"rPZbXR8xCB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Policies\",\"col\":3}},{\"id\":\"Ncttzi03uu\",\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":4}}]",
+ "charts": [
+  {
+   "chart_name": "Payments",
+   "label": "Revenue"
+  }
+ ],
+ "content": "[{\"id\":\"M2Lrbf5q61\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">AMS</span>\",\"col\":12}},{\"id\":\"bCpwzT21hi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":3}},{\"id\":\"rPZbXR8xCB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Policies\",\"col\":3}},{\"id\":\"fg8QJZ8A31\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Brokers\",\"col\":3}},{\"id\":\"wZ3VIbRx-P\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Clients\",\"col\":3}},{\"id\":\"nanrqyt1MU\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Revenue\",\"col\":12}},{\"id\":\"AFAnGzbr1q\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"id\":\"rQPwuqyBKZ\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"id\":\"UAtUHUWXqX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Developer Notes <br></b></span>\",\"col\":12}},{\"id\":\"Lo1Y6w1SX4\",\"type\":\"paragraph\",\"data\":{\"text\":\"Clients --&gt; Accounts<br>\",\"col\":12}}]",
  "creation": "2023-10-17 10:44:44.248229",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -14,15 +19,43 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Masters",
-   "link_count": 9,
+   "label": "Reports",
+   "link_count": 2,
    "onboard": 0,
    "type": "Card Break"
   },
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Insurance Agency",
+   "label": "Payments",
+   "link_count": 0,
+   "link_to": "Payment receipts",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Commission Statement",
+   "link_count": 0,
+   "link_to": "Commission Statement",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 6,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Agency",
    "link_count": 0,
    "link_to": "Insurance Agency",
    "link_type": "DocType",
@@ -32,7 +65,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Agent",
+   "label": "Agents",
    "link_count": 0,
    "link_to": "Agent",
    "link_type": "DocType",
@@ -42,9 +75,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Insured",
+   "label": "Policy Types",
    "link_count": 0,
-   "link_to": "Insured",
+   "link_to": "Policy Type",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -52,29 +85,19 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Policy",
-   "link_count": 0,
-   "link_to": "Policy",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Carrier",
-   "link_count": 0,
-   "link_to": "Carrier",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "MGA",
+   "label": "MGAs",
    "link_count": 0,
    "link_to": "MGA",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Carriers",
+   "link_count": 0,
+   "link_to": "Carrier",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -88,29 +111,9 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Payment Receipt",
-   "link_count": 0,
-   "link_to": "Payment Receipt",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Payment",
-   "link_count": 0,
-   "link_to": "Payment",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
   }
  ],
- "modified": "2023-12-15 14:31:28.884928",
+ "modified": "2024-01-03 12:09:46.168291",
  "modified_by": "Administrator",
  "module": "AMS",
  "name": "AMS",
@@ -119,30 +122,45 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "Administrator"
+  }
+ ],
  "sequence_id": 1.0,
  "shortcuts": [
   {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Dashboard",
+   "link_to": "Agency Dashboard",
+   "type": "Dashboard"
+  },
+  {
    "color": "Green",
    "doc_view": "List",
-   "format": "{} Enabled",
-   "label": "Agent",
-   "link_to": "Agent",
-   "stats_filter": "{\"enabled\":[\"=\",1]}",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
+   "format": "{} Active",
    "label": "Policies",
    "link_to": "Policy",
+   "stats_filter": "{\"status\":[\"in\",[\"Proposal\",\"Active\",null]]}",
    "type": "DocType"
   },
   {
-   "color": "Grey",
+   "color": "Green",
    "doc_view": "List",
-   "label": "Doctypes",
-   "link_to": "DocType",
+   "format": "{} Active",
+   "label": "Brokers",
+   "link_to": "Agent",
+   "stats_filter": "{\"status\":[\"=\",\"Active\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Active",
+   "label": "Clients",
+   "link_to": "Insured",
+   "stats_filter": "{\"enabled\":[\"=\",1]}",
    "type": "DocType"
   }
  ],

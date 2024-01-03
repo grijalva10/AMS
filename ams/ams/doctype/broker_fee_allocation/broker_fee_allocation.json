@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-26 19:09:47.483933",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "transaction",
+  "agent",
+  "broker_fee",
+  "section_break_cjlw",
+  "broker_percentage",
+  "column_break_htas",
+  "broker_share",
+  "section_break_fap5",
+  "brokerage_percentage",
+  "column_break_1flu",
+  "brokerage_share"
+ ],
+ "fields": [
+  {
+   "fieldname": "transaction",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Transaction",
+   "options": "Transaction",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agent",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Agent",
+   "options": "Agent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_cjlw",
+   "fieldtype": "Section Break",
+   "label": "Broker"
+  },
+  {
+   "fieldname": "broker_fee",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Broker Fee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "broker_percentage",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Broker Percentage",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_htas",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "broker_share",
+   "fieldtype": "Currency",
+   "label": "Broker Share",
+   "reqd": 1
+  },
+  {
+   "fieldname": "brokerage_percentage",
+   "fieldtype": "Percent",
+   "label": "Brokerage Percentage",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1flu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "brokerage_share",
+   "fieldtype": "Currency",
+   "label": "Brokerage Share",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_fap5",
+   "fieldtype": "Section Break",
+   "hide_border": 1,
+   "label": "Brokerage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-26 19:12:32.427502",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "Broker Fee Allocation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

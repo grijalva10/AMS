@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-02 12:08:37.765081",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "policy",
+  "carrier",
+  "mga",
+  "premium",
+  "broker_fee"
+ ],
+ "fields": [
+  {
+   "fieldname": "policy",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Policy",
+   "options": "Policy",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "policy.carrier",
+   "fieldname": "carrier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Carrier",
+   "options": "Carrier",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "policy.mga",
+   "fieldname": "mga",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "MGA",
+   "options": "MGA",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "policy.total_premium",
+   "fieldname": "premium",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Premium"
+  },
+  {
+   "fetch_from": "policy.broker_fee",
+   "fieldname": "broker_fee",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Broker Fee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-02 12:08:37.765081",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "Insured Policy",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

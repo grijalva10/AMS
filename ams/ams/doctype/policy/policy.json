@@ -12,6 +12,7 @@
  "engine": "InnoDB",
  "field_order": [
   "policy_number",
+  "application_number",
   "insured",
   "policy_type",
   "business_type",
@@ -24,29 +25,40 @@
   "column_break_wnmj",
   "carrier",
   "agent",
+  "agent_id",
   "mga",
-  "financing_company"
+  "financing_company",
+  "documents_section",
+  "policy_docs",
+  "binder",
+  "column_break_plsv",
+  "sales_invoice",
+  "finance_agreement"
  ],
  "fields": [
   {
    "fieldname": "policy_number",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Policy Number",
    "reqd": 1,
    "unique": 1
   },
   {
+   "bold": 1,
    "fieldname": "effective_date",
    "fieldtype": "Date",
+   "in_filter": 1,
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Effective Date",
    "reqd": 1
   },
   {
+   "bold": 1,
    "fieldname": "expiration_date",
    "fieldtype": "Date",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Expiration Date",
    "reqd": 1
   },
@@ -79,9 +91,7 @@
   {
    "fieldname": "business_type",
    "fieldtype": "Select",
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
+   "in_filter": 1,
    "label": "Business Type",
    "options": "New Business\nRenewal\nEndorsement\nReinstated"
   },
@@ -91,7 +101,6 @@
    "in_filter": 1,
    "in_global_search": 1,
    "in_list_view": 1,
-   "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Insured",
    "options": "Insured",
@@ -101,9 +110,6 @@
    "fieldname": "agent",
    "fieldtype": "Link",
    "in_filter": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
    "label": "Agent",
    "options": "Agent",
    "reqd": 1
@@ -116,6 +122,7 @@
    "reqd": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "financing_company",
    "fieldtype": "Link",
    "label": "Financing Company",
@@ -130,25 +137,74 @@
    "fieldtype": "Select",
    "in_filter": 1,
    "in_list_view": 1,
-   "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Status",
-   "options": "Active\nCancelled\nExpired\nNon-Renewal"
+   "options": "Proposal\nActive\nCancelled\nExpired\nNon-Renewal"
   },
   {
    "fieldname": "policy_type",
    "fieldtype": "Link",
+   "in_filter": 1,
    "in_list_view": 1,
-   "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Policy Type",
    "options": "Policy Type",
    "reqd": 1
+  },
+  {
+   "fieldname": "application_number",
+   "fieldtype": "Data",
+   "label": "Application Number"
+  },
+  {
+   "fieldname": "documents_section",
+   "fieldtype": "Section Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "policy_docs",
+   "fieldtype": "Attach",
+   "label": "Policy Docs"
+  },
+  {
+   "fieldname": "binder",
+   "fieldtype": "Attach",
+   "label": "Binder"
+  },
+  {
+   "fieldname": "column_break_plsv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Attach",
+   "label": "Sales Invoice"
+  },
+  {
+   "fieldname": "finance_agreement",
+   "fieldtype": "Attach",
+   "label": "Finance Agreement"
+  },
+  {
+   "fetch_from": "agent.user",
+   "fieldname": "agent_id",
+   "fieldtype": "Data",
+   "label": "Agent ID"
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-12-15 13:48:28.133386",
+ "is_calendar_and_gantt": 1,
+ "links": [
+  {
+   "link_doctype": "Payment Receipt",
+   "link_fieldname": "policy"
+  },
+  {
+   "link_doctype": "Claim",
+   "link_fieldname": "policy"
+  }
+ ],
+ "modified": "2023-12-21 15:24:32.493474",
  "modified_by": "Administrator",
  "module": "AMS",
  "name": "Policy",
@@ -166,9 +222,49 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Broker",
+   "share": 1,
+   "write": 1
   }
  ],
+ "queue_in_background": 1,
+ "search_fields": "policy_type,insured",
+ "show_preview_popup": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Proposal"
+  },
+  {
+   "color": "Green",
+   "title": "Active"
+  },
+  {
+   "color": "Red",
+   "title": "Cancelled"
+  },
+  {
+   "color": "Orange",
+   "title": "Expired"
+  },
+  {
+   "color": "Yellow",
+   "title": "Non-Renewal"
+  }
+ ],
+ "timeline_field": "insured",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

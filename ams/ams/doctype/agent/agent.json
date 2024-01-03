@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{MMYY}{#}",
  "creation": "2023-10-17 10:21:25.192781",
  "default_view": "List",
  "doctype": "DocType",
@@ -8,90 +9,86 @@
  "engine": "InnoDB",
  "field_order": [
   "agency",
-  "first_name",
-  "last_name",
+  "user",
+  "commission_percentage",
   "full_name",
   "email",
   "phone",
   "cell_phone",
-  "agent_type",
-  "user",
-  "enabled",
-  "commission_percentage"
+  "status",
+  "user_image"
  ],
  "fields": [
   {
    "fieldname": "agency",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Agency",
    "options": "Insurance Agency",
    "reqd": 1
   },
   {
-   "fetch_from": "employee.employee_name",
-   "fieldname": "first_name",
-   "fieldtype": "Data",
-   "label": "First Name",
-   "reqd": 1
-  },
-  {
-   "fetch_from": "employee.status",
-   "fieldname": "last_name",
-   "fieldtype": "Data",
-   "label": "Last Name",
-   "reqd": 1
-  },
-  {
+   "fetch_from": "user.email",
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email",
-   "options": "Email"
+   "options": "Email",
+   "read_only": 1
   },
   {
+   "fetch_from": "user.phone",
    "fieldname": "phone",
    "fieldtype": "Data",
    "label": "Phone",
-   "options": "Phone"
+   "options": "Phone",
+   "read_only": 1
   },
   {
+   "fetch_from": "user.phone",
    "fieldname": "cell_phone",
    "fieldtype": "Data",
    "label": "Cell Phone",
-   "options": "Phone"
-  },
-  {
-   "fetch_from": "employee.department",
-   "fieldname": "agent_type",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Agent Type",
-   "options": "Sales Agent\nService Agent"
+   "options": "Phone",
+   "read_only": 1
   },
   {
    "fieldname": "user",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "User",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
+   "fetch_from": "user.full_name",
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Full Name"
-  },
-  {
-   "default": "1",
-   "fieldname": "enabled",
-   "fieldtype": "Check",
-   "label": "Enabled"
+   "label": "Full Name",
+   "read_only": 1
   },
   {
    "default": "65",
    "fieldname": "commission_percentage",
    "fieldtype": "Percent",
-   "in_list_view": 1,
-   "label": "Commission Percentage"
+   "label": "Commission Percentage",
+   "reqd": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fetch_from": "user.user_image",
+   "fieldname": "user_image",
+   "fieldtype": "Attach Image",
+   "label": "User Image",
+   "read_only": 1
   }
  ],
+ "image_field": "user_image",
  "index_web_pages_for_search": 1,
  "links": [
   {
@@ -101,12 +98,21 @@
   {
    "link_doctype": "Insured",
    "link_fieldname": "agent"
+  },
+  {
+   "link_doctype": "Broker Fee Allocation",
+   "link_fieldname": "agent"
+  },
+  {
+   "link_doctype": "Transaction",
+   "link_fieldname": "agent"
   }
  ],
- "modified": "2023-12-15 13:44:32.723687",
+ "modified": "2023-12-26 19:20:49.619949",
  "modified_by": "Administrator",
  "module": "AMS",
  "name": "Agent",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -122,6 +128,9 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
+ "search_fields": "full_name",
+ "show_name_in_global_search": 1,
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",

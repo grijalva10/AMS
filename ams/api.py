@@ -45,3 +45,10 @@ def new_payment_receipt(client=None, email=None, transaction_id=None,
     doc.insert()
     frappe.db.commit()
     return doc
+
+
+@frappe.whitelist()
+def get_insured_for_broker():
+    current_user = frappe.session.user
+    insured_list = frappe.get_list('Insured', filters={'agent': current_user}, fields=['name', 'insured_detail_field1', 'insured_detail_field2'])
+    return insured_list

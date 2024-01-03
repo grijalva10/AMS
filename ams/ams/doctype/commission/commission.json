@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-18 20:43:49.762489",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "broker",
+  "policy",
+  "insured",
+  "broker_fee",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fetch_from": "policy.insured",
+   "fieldname": "insured",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Insured",
+   "options": "Insured",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "policy",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Policy",
+   "options": "Policy",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Commission",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "broker",
+   "fieldtype": "Link",
+   "label": "Broker",
+   "options": "Agent",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "policy.broker_fee",
+   "fieldname": "broker_fee",
+   "fieldtype": "Currency",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Broker Fee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-18 21:15:16.831649",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "Commission",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Gray",
+   "title": "Draft"
+  },
+  {
+   "color": "Blue",
+   "title": "Submitted"
+  },
+  {
+   "color": "Light Blue",
+   "title": "Awaiting Verification"
+  },
+  {
+   "color": "Green",
+   "title": "Verified"
+  },
+  {
+   "color": "Orange",
+   "title": "Awaiting Approval"
+  },
+  {
+   "color": "Cyan",
+   "title": "Approved"
+  },
+  {
+   "color": "Red",
+   "title": "Rejected / Needs Correction"
+  },
+  {
+   "color": "Cyan",
+   "title": "Cancelled"
+  }
+ ]
+}

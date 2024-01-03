@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:TRANS-{#}",
+ "creation": "2023-12-22 13:44:33.435822",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "insured",
+  "agent",
+  "transaction_date",
+  "policies",
+  "section_break_pn0y",
+  "section_break_lymr",
+  "total_premium",
+  "total_broker_fee",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "insured",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Insured",
+   "options": "Insured",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agent",
+   "fieldtype": "Link",
+   "label": "Agent",
+   "options": "Agent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "Transaction Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_premium",
+   "fieldtype": "Currency",
+   "label": "Total Premium",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_broker_fee",
+   "fieldtype": "Currency",
+   "label": "Total Broker Fee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Transaction",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "policies",
+   "fieldtype": "Table",
+   "label": "Policies",
+   "options": "Policies",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_pn0y",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_lymr",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Broker Fee Allocation",
+   "link_fieldname": "transaction"
+  }
+ ],
+ "modified": "2023-12-26 19:30:40.707812",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "Transaction",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "queue_in_background": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

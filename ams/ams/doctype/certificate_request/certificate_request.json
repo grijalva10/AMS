@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-20 13:36:21.206578",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "insured",
+  "requestor_name",
+  "address_info_section",
+  "address",
+  "city",
+  "column_break_ujde",
+  "state",
+  "section_break_i4ft",
+  "zip_code",
+  "section_break_0kqn",
+  "special_instructions",
+  "requirements"
+ ],
+ "fields": [
+  {
+   "fieldname": "insured",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Insured",
+   "reqd": 1
+  },
+  {
+   "fieldname": "requestor_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Requestor Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_info_section",
+   "fieldtype": "Section Break",
+   "label": "Address Info"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "zip_code",
+   "fieldtype": "Data",
+   "label": "Zip Code",
+   "options": "\nAlabama\nAlaska\nArizona\nArkansas\nCalifornia\nColorado\nConnecticut\nDelaware\nFlorida\nGeorgia\nHawaii\nIdaho\nIllinois\nIndiana\nIowa\nKansas\nKentucky\nLouisiana\nMaine\nMaryland\nMassachusetts\nMichigan\nMinnesota\nMississippi\nMissouri\nMontana\nNebraska\nNevada\nNew Hampshire\nNew Jersey\nNew Mexico\nNew York\nNorth Carolina\nNorth Dakota\nOhio\nOklahoma\nOregon\nPennsylvania\nRhode Island\nSouth Carolina\nSouth Dakota\nTennessee\nTexas\nUtah\nVermont\nVirginia\nWashington\nWest Virginia\nWisconsin\nWyoming",
+   "reqd": 1
+  },
+  {
+   "fieldname": "special_instructions",
+   "fieldtype": "Text",
+   "label": "Special Instructions "
+  },
+  {
+   "fieldname": "requirements",
+   "fieldtype": "Data",
+   "label": "Requirements"
+  },
+  {
+   "fieldname": "column_break_ujde",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_i4ft",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_0kqn",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-20 13:37:23.534993",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "Certificate Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

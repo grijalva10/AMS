@@ -7,20 +7,77 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "claim_name"
+  "policy",
+  "insured",
+  "status",
+  "claim_amount",
+  "column_break_ezii",
+  "date_of_loss",
+  "time_of_loss",
+  "type_of_loss",
+  "section_break_wmnp",
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "claim_name",
-   "fieldtype": "Data",
+   "fieldname": "policy",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Claim Name",
+   "label": "Policy",
+   "options": "Policy",
    "reqd": 1
+  },
+  {
+   "fieldname": "insured",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Insured",
+   "options": "Insured",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Submitted\nUnder Review\nApproved\nRejected"
+  },
+  {
+   "fieldname": "claim_amount",
+   "fieldtype": "Data",
+   "label": "Claim Amount"
+  },
+  {
+   "fieldname": "column_break_ezii",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_loss",
+   "fieldtype": "Date",
+   "label": "Date of Loss"
+  },
+  {
+   "fieldname": "time_of_loss",
+   "fieldtype": "Time",
+   "label": "Time of Loss"
+  },
+  {
+   "fieldname": "type_of_loss",
+   "fieldtype": "Data",
+   "label": "Type of Loss"
+  },
+  {
+   "fieldname": "section_break_wmnp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-06 11:33:17.854764",
+ "modified": "2023-12-19 00:05:30.082092",
  "modified_by": "Administrator",
  "module": "AMS",
  "name": "Claim",

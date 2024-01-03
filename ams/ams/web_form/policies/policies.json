@@ -1,0 +1,107 @@
+{
+ "allow_comments": 1,
+ "allow_delete": 0,
+ "allow_edit": 0,
+ "allow_incomplete": 0,
+ "allow_multiple": 0,
+ "allow_print": 1,
+ "anonymous": 0,
+ "apply_document_permissions": 1,
+ "button_label": "Save",
+ "creation": "2023-12-20 13:43:24.356699",
+ "doc_type": "Policy",
+ "docstatus": 0,
+ "doctype": "Web Form",
+ "idx": 0,
+ "introduction_text": "<div class=\"ql-editor read-mode\"><p>here are your policies</p></div>",
+ "is_standard": 1,
+ "list_columns": [
+  {
+   "fieldname": "policy_number",
+   "fieldtype": "Data",
+   "label": "Policy Number"
+  },
+  {
+   "fieldname": "policy_type",
+   "fieldtype": "Link",
+   "label": "Policy Type"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status"
+  },
+  {
+   "fieldname": "carrier",
+   "fieldtype": "Link",
+   "label": "Carrier"
+  }
+ ],
+ "list_title": "Policies",
+ "login_required": 1,
+ "max_attachment_size": 0,
+ "modified": "2023-12-21 17:28:47.724896",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "policies",
+ "owner": "Administrator",
+ "published": 0,
+ "route": "policies",
+ "show_attachments": 1,
+ "show_list": 1,
+ "show_sidebar": 1,
+ "title": "Policies",
+ "web_form_fields": [
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "policy_number",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Policy Number",
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 0,
+   "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 0,
+   "label": "Status",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Proposal\nActive\nCancelled\nExpired\nNon-Renewal",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "policy_type",
+   "fieldtype": "Link",
+   "hidden": 0,
+   "label": "Policy Type",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Policy Type",
+   "read_only": 0,
+   "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "sales_invoice",
+   "fieldtype": "Attach",
+   "hidden": 0,
+   "label": "Sales Invoice",
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  }
+ ],
+ "website_sidebar": "Insured Sidebar"
+}

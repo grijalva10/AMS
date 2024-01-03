@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2023-12-21 15:04:01.624101",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Policy",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here\n\n{{ doc }}",
+ "modified": "2023-12-21 15:04:01.624101",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "Notify Broker about Policy",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Broker"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{doc.name}} Approved",
+ "value_changed": "agent"
+}
