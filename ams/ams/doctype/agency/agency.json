@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-03 13:18:56.809155",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_tab",
+  "primary_contact",
+  "agency_name",
+  "status",
+  "tier",
+  "date_established",
+  "brokers_tab",
+  "goals_tab",
+  "total_revenue_goal",
+  "total_policy_goal",
+  "renewal_rate_goal",
+  "new_policy_goal",
+  "column_break_ozin"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_established",
+   "fieldtype": "Date",
+   "label": "Date Established"
+  },
+  {
+   "fieldname": "new_policy_goal",
+   "fieldtype": "Data",
+   "label": "New Policy Goal"
+  },
+  {
+   "fieldname": "primary_contact",
+   "fieldtype": "Link",
+   "label": "Primary Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "renewal_rate_goal",
+   "fieldtype": "Percent",
+   "label": "Renewal Rate Goal"
+  },
+  {
+   "fieldname": "tier",
+   "fieldtype": "Select",
+   "label": "Tier",
+   "options": "high\nmedium\nlow"
+  },
+  {
+   "fieldname": "total_policy_goal",
+   "fieldtype": "Int",
+   "label": "total policy goal"
+  },
+  {
+   "fieldname": "total_revenue_goal",
+   "fieldtype": "Currency",
+   "label": "total revenue goal"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "overview_tab",
+   "fieldtype": "Tab Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "brokers_tab",
+   "fieldtype": "Tab Break",
+   "label": "Brokers"
+  },
+  {
+   "fieldname": "goals_tab",
+   "fieldtype": "Tab Break",
+   "label": "Goals"
+  },
+  {
+   "fieldname": "column_break_ozin",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "agency_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Agency Name",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-04 16:10:53.296626",
+ "modified_by": "Administrator",
+ "module": "AMS",
+ "name": "Agency",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "agency_name"
+}
